@@ -4,14 +4,21 @@
 	<meta charset="UTF-8">
 	<title>clock</title>
 	<style type="text/css">
-		#canvas{
-			display: block;
-			margin: 0 auto;
+		#canvas1,#canvas2{
+			position: absolute;
+		}
+		#canvas1{
+			z-index: 10;
+			background: transparent;
+		}
+		#canvas2{
+			z-index: 5;
 		}
 	</style>
 </head>
 <body>
-	<canvas id="canvas"></canvas>
-	<script type="text/javascript" src="js/clock.js"></script>
+	<canvas id="canvas1"></canvas>
+	<canvas id="canvas2"></canvas>
+	<script type="text/javascript" src="clock.js"></script>
 </body>
 </html>
